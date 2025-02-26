@@ -1,0 +1,2 @@
+npm run test
+echo "Husky pre-commit hook running successfully"
