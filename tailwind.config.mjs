@@ -10,6 +10,12 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        purple: "#6E51E0",
+        lightblack:"#363D4F",
+        grey:"#505A71"
+      },
+      fontFamily: {
+        inter: ["Inter"],
       },
     },
   },

@@ -11,7 +11,10 @@
     "test": "echo 'Running tests...'"
   },
   "dependencies": {
-    "@radix-ui/themes": "^3.2.0",
+    "@fontsource/inter": "^5.2.5",
+    "@mantine/core": "^7.17.0",
+    "@mantine/hooks": "^7.17.0",
+    "@mantine/next": "^6.0.22",
     "next": "15.1.7",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"

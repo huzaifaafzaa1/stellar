@@ -1,5 +1,7 @@
-import { Flex, Text } from "@radix-ui/themes";
+"use client";
+import { Flex,Image } from "@mantine/core";
 import Link from "next/link";
+import CustomButton from "./ui/CustomButton";
 
 const items = [
   { name: "Product", link: "/product" },
@@ -11,31 +13,31 @@ const items = [
 
 const Navbar = () => {
   return (
-    <Flex justify="between" align="center"  className=" h-[87px]  rounded-[999px] mx-[48px] relative top-[32px] bg-white  border-2 border-solid border-black px-6 ">
-
+    <Flex
+      justify="space-between"
+      align="center"
+      className="h-[87px] bg-white border outline outline-4 outline-white rounded-[999px] mx-[48px] relative z-10 top-[32px] px-6"
+    >
       {/* Navbar Icon and Title (Left) */}
-      <Flex  className="gap-2 items-center">
-        <div className="w-[25px] h-[19px]">
-          <img src="images/websiteicon.svg" alt="website logo" className="min-w-[25px] min-h-[19px]" />
-        </div>
-        <Text className=" text-xl font-medium">Stellar</Text>
+      <Flex align="center" justify="center"  gap="sm">
+        <Image src="/images/websiteicon.svg" alt="website logo" width={25} height={19} />
+        <p className="text-[30px] font-medium font-inter">Stellar</p>
       </Flex>
 
       {/* Navbar Links (Center) */}
-      <Flex className="gap-6">
+      <Flex gap="lg">
         {items.map((item, index) => (
           <Link key={index} href={item.link} passHref>
-            <Text className="cursor-pointer">{item.name}</Text>
+            <p className="cursor-pointer text-sm">{item.name}</p>
           </Link>
         ))}
       </Flex>
 
       {/* Signup and Sign-in Buttons (Right) */}
-      <Flex className="gap-3 items-center">
-        <button className="h-[39px] w-[76px]">Sign in</button>
-        <button className="h-[39px] w-[132px] rounded-[999px] p-2 border font-medium text-[14px] ">Sign up for free</button>
+      <Flex gap="md" align="center">
+      <CustomButton variant="subtle" color="black" >Sign in</CustomButton>
+      <CustomButton variant="default" color="black">Sign up for free</CustomButton>
       </Flex>
-
     </Flex>
   );
 };
