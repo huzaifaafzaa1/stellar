@@ -12,7 +12,10 @@ export default function Home() {
        {/* this is the hero Section */}
        <HeroSection></HeroSection>
       
-       <div className="">hello</div>  
+      
+      <div className="bg-yellow-600 h-[800px]  ">hello</div> 
+     
+    
 
   
     </div>

@@ -15,7 +15,7 @@ const HeroSection = () => {
   ];
 
   return (
-    <div className="HeroSection absolute top-0 h-[1009.98px] w-[100%] border-2 border-solid border-black ">
+    <div className="HeroSection h-[1009.98px] w-[100%] border-2 border-solid border-black ">
       {/* Background */}
       <Background></Background>
 

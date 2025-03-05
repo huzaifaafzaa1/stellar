@@ -16,7 +16,7 @@ const Navbar = () => {
     <Flex
       justify="space-between"
       align="center"
-      className="h-[87px] bg-white border outline outline-4 outline-white rounded-[999px] mx-[48px] relative z-10 top-[32px] px-6"
+      className=" bg-white border outline outline-4 outline-white rounded-[999px]  h-[87px] w-[1820px] mx-[48px] absolute z-10 top-[32px] px-6"
     >
       {/* Navbar Icon and Title (Left) */}
       <Flex align="center" justify="center"  gap="sm">
